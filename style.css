@@ -1,0 +1,314 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    background-color: rgb(34, 33, 33);
+}
+
+.nav-list {
+    display: flex;
+    width: 70%;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 10px 30px;
+    margin-top: 1.5vw;
+    font-size: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-list li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+}
+
+.logo img {
+    height: 4vw;
+    width: 4vw;
+    border-radius: 10vw;
+    padding: 10px;
+}
+
+#search {
+    padding: 7px;
+    margin: 23px 0px;
+    font-size: 14px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn {
+    padding: 7px;
+    margin-right: 27px;
+    border-radius: 9px;
+    background: none;
+    color: white;
+    border: 2px solid rgb(132, 129, 129);
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url("https://source.unsplash.com/1500x500/?classroom, books");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    display: flex;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 100vh;
+}
+
+.firsthalf {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf img {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 17vw;
+    border: 2px solid wheat;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+.buttons {
+    margin: 15px 0px;
+}
+
+.btn1 {
+    margin: 0px 6px;
+    padding: 5px;
+    background-color: #b9b4b4;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    border: 2px solid rgb(132, 129, 129);
+    cursor: pointer;
+}
+
+.btn1:hover {
+    color: black;
+    background-color: white;
+}
+
+.section1 {
+    display: flex;
+    padding: 80px;
+}
+
+.left {
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.right img {
+    border-radius: 100px;
+    border: 2px solid black;
+}
+
+hr {
+    width: 88vw;
+    margin: 10px 0;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #bbb7b7;
+}
+
+.burger {
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    top: 27px;
+    display: none;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px;
+}
+
+.contact{
+    text-shadow: 2px 2px 2px darkblue;
+    background: linear-gradient(to right, rgb(250, 251, 250), rgb(242, 239, 236), rgb(136, 137, 137));
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+#name{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    margin-top: 10px;
+    font-size: 24px;
+    box-shadow: 4px 4px 4px darkblue;
+    padding: 0 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+#number{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 24px;
+    width: 50%;
+    box-shadow: 4px 4px 4px darkblue;
+    padding: 0 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+#email{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    margin-top: 10px;
+    font-size: 24px;
+    box-shadow: 4px 4px 4px darkblue;
+    padding: 0 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+#textarea{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 4px 4px 4px darkblue;
+    font-size: 24px;
+    border-radius: 7px;
+    padding: 0 10px;
+    font-family: sans-serif;
+    border: none;
+}
+
+.btn2{
+    display: flex;
+    box-shadow: 4px 4px 4px darkblue;
+    margin: 10px 365px;
+    border-radius: 7px;
+    font-size: 22px;
+    background: none;
+    border: none;
+}
+
+.btn2:hover{
+    color: rgb(56, 55, 55);
+    background-color: rgb(196, 192, 192);
+    border: 2px solid black;
+}
+
+@media (max-width: 950px) {
+
+    .section img{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 480px;
+
+    }
+
+    .rightnav {
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 80px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 880px) {
+
+
+    .logo img{
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .section{
+        flex-direction: column;
+    }
+
+    .section1{
+        flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .btn1{
+        font-size: 10px;
+    }
+}
